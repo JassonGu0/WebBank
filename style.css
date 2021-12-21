@@ -1190,6 +1190,8 @@ textarea:focus {
         opacity: 1;
         visibility: visible; }
 
+#divLogo{margin-top: 48px; margin-bottom: 0px; text-align: left;}
+
 /* :: 17.0 Breadcumb Area CSS */
 .breadcumb-area {
   position: relative;
