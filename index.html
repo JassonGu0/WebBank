@@ -20,6 +20,54 @@
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- CSS Slider -->
+    <link rel="stylesheet" href="opp/bootstrap.min.css">
+    <script src="opp/jquery.min.js"></script>
+    <script src="opp/bootstrap.min.js"></script>
+    
+    <style>
+    <!--    /* Suku Bunga LPS */ -->
+    #center {
+        margin:0 auto;
+        width:40%;
+    }
+    
+    .divTable {
+        width: 25% ;
+        display: table;
+        -webkit-box-shadow: 1px 1px 1px 1px #FF3333;
+        box-shadow: 1px 1px 1px 1px #FF3333;
+        text-align: center;
+    }
+    
+    .divTableRow {
+        width: 100%;
+        height: 100%;
+        display: table-row;
+        justify-content: center;
+    }
+     
+    .divTableCell {
+        padding:5px;
+        width: 25%;
+        height: 100%;
+        display: table-cell;
+        border: 1px solid #FF0000;
+        justify-content: center;
+    }
+    
+    .divTableCellhd {
+        background-color: #FF3333;
+        color: #fff;
+        padding:5px;
+        width: 25%;
+        height: 100%;
+        display: table-cell;
+        border: 1px solid #FF0000;
+        justify-content: center;
+    }
+    </style>
+    
 </head>
 
 <body>
@@ -133,6 +181,7 @@
                                     <li><a href="#">Layanan</a>
                                         <ul class="dropdown">
                                             <li><a href="pgd.html">Pengaduan</a></li>
+                                            <li><a href="pcb.html">Prosedur</a></li>
                                             <li><a href="kr.html">Karir</a></li>
                                             <li><a href="cvd.html">Covid-19</a></li>
                                         </ul>
@@ -152,19 +201,39 @@
     <!-- ##### Header Area End ##### -->
 
     <!-- ##### Hero Area Start ##### -->
-    <section class="hero-area">
-        <div class="hero-slides owl-carousel">
+    <!-- section class="hero-area" -->
+        <!-- div class="hero-slides owl-carousel" -->
+
             <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/CNY2022-1.jpg);">
+            <!-- div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/BIK-2022.jpg);">
 
             </div>
 
-            <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/newyear2022.jpg);">
+        </div -->
+    
 
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <!-- li data-target="#carouselExampleIndicators" data-slide-to="1"></li -->
+            <!-- li data-target="#carouselExampleIndicators" data-slide-to="2"></li -->
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/bg-img/BIK-2022.jpg" class="d-block w-100" alt="#">
             </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-    </section>
+
+    <!-- /section -->
     <!-- ##### Hero Area End ##### -->
 
     <!-- ##### Best Receipe Area Start ##### -->
@@ -182,11 +251,60 @@
                 <!-- Single Best Receipe Area -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-best-receipe-area mb-30">
+                        <a href="img/bg-img/FrameHariBPRBPRS2022.jpg"><img src="img/bg-img/FrameHariBPRBPRS2022.jpg" alt="HariBPRBPRS2022"></a>
+                        <div class="receipe-content">
+                                <h5>Selamat Hari BPR-BPRS Nasional - 21 Mei 2022</h5>      
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Best Receipe Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-best-receipe-area mb-30">
+                        <a href="img/bg-img/2022EID.jpg"><img src="img/bg-img/2022EID.jpg" alt="Selamat Hari Raya Idul Fitri 1443 H"></a>
+                        <div class="receipe-content">
+                                <h5>Selamat Hari Raya Idul Fitri 1443 H</h5>
+                                <h6><center>Mohon Maaf Lahir dan Batin</center></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Best Receipe Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-best-receipe-area mb-30">
+                        <a href="img/bg-img/Good_friday.jpg"><img src="img/bg-img/Good_friday.jpg" alt="Wafat Isa Al Masih"></a>
+                        <div class="receipe-content">
+                                <h5>Selamat Memperingati Wafat Isa Al Masih</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Best Receipe Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-best-receipe-area mb-30">
+                        <a href="img/bg-img/Nyepi2022.jpg"><img src="img/bg-img/Nyepi2022.jpg" alt="Hari Raya Nyepi 2022"></a>
+                        <div class="receipe-content">
+                                <h5>Selamat Memperingati Hari Raya Nyepi 2022 - Tahun Baru Saka 1944</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Best Receipe Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-best-receipe-area mb-30">
+                        <a href="img/bg-img/IsraMiraj.jpg"><img src="img/bg-img/IsraMiraj.jpg" alt="Isra Miraj Nabi Muhammad SAW"></a>
+                        <div class="receipe-content">
+                                <h5>Selamat Memperingati Isra Miraj Nabi Muhammad SAW</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Best Receipe Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-best-receipe-area mb-30">
                         <a href="img/bg-img/CNY2022-2.jpg"><img src="img/bg-img/CNY2022-2.jpg" alt="Happy Chinese New Year 2022"></a>
                         <div class="receipe-content">
-                            <a href="receipe-post.html">
                                 <h5>Selamat Hari Raya Imlek 2022 / 2573</h5>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -196,9 +314,7 @@
                     <div class="single-best-receipe-area mb-30">
                         <a href="img/bg-img/A-CNY2022.jpg"><img src="img/bg-img/A-CNY2022.jpg" alt="Happy Chinese New Year 2022"></a>
                         <div class="receipe-content">
-                            <a href="receipe-post.html">
                                 <h5>Pengumuman Jam Operasional dalam Rangka Menyambut & Merayakan Tahun Baru 2022 / 2573</h5>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -208,9 +324,7 @@
                     <div class="single-best-receipe-area mb-30">
                         <a href="img/bg-img/HappyNewYear2022.jpg"><img src="img/bg-img/HappyNewYear2022.jpg" alt="Happy New Year 2022"></a>
                         <div class="receipe-content">
-                            <a href="receipe-post.html">
                                 <h5>Selamat Tahun Baru 2022</h5>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -220,26 +334,43 @@
                     <div class="single-best-receipe-area mb-30">
                         <a href="img/bg-img/PengumumanOpr.jpg"><img src="img/bg-img/PengumumanOpr.jpg" alt="Pengumuman"></a>
                         <div class="receipe-content">
-                            <a href="receipe-post.html">
                                 <h5>Pengumuman Jam Operasional</h5>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Best Receipe Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-best-receipe-area mb-30">
-                        <a href="img/bg-img/Chirstmas-21.jpg"><img src="img/bg-img/Chirstmas-21.jpg" alt="Chirstmas"></a>
-                        <div class="receipe-content">
-                            <a href="receipe-post.html">
-                                <h5>Selamat Memperingati Hari Raya Natal 2021</h5>
-                            </a>                            
                         </div>
                     </div>
                 </div>
 
             </div>
+
+            <div>
+                <p style="border: 2px solid #FFFFFF; text-align: center;"><a href="index-page2.html">page 2 > </a></p>
+            </div>
+
+            <br>
+
+            <!-- Suku Bunga LPS -->
+            <h6 align="center">
+                Tingkat Bunga Penjaminan - Lembaga Penjamin Simpanan
+            </h6>
+            <p align="center">
+                Periode: 09-12-2022 - 31-01-2023
+            </p>
+
+            <div class="divTable" id="center">
+                <div class="divTableRow">
+                    <div class="divTableCellhd">BPR</div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">IDR 6.25%</div>
+                </div>
+            </div>
+            <!-- End Suku Bunga LPS -->
+
+                             </div> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div>
+
         </div>
     </section>
 
